@@ -18,7 +18,7 @@
     <link rel="icon" type="image/png" href="/static/images/favicon.png" />
 
     <META name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <META name="description" content="Tonx Coffee Reviews. Find the latest reviews on Tonx Coffee. Is it worth it?"> 
+    <META name="description" content="Tonx Coffee Reviews. Find the latest reviews on Tonx Coffee. Is it worth it? Read the pros and cons of Tonx!"> 
 
     <link rel="stylesheet" href="/static/css/style.css">
 
@@ -34,11 +34,11 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-      
+
       function trackLink(link, category, action) { 
  
       try { 
-      _gaq.push(['_trackEvent', category , action, document.title]); 
+      _gaq.push(['_trackEvent', category , action, link.innerHTML]); 
       } catch(err){}
        
       setTimeout(function() {
