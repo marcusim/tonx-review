@@ -1498,8 +1498,41 @@ article ul li li li {
 
 #footer a:hover {
   color: #339999;
-
 }
+
+#ups {
+  position: relative;
+  top: 0px;
+  -webkit-transition:all 600ms ease;
+  -moz-transition:all 600ms ease;
+  -o-transition:all 600ms ease;
+}
+
+#ups:hover {
+  position: relative;
+  top: -15px;
+  -webkit-transition:all 600ms ease;
+  -moz-transition:all 600ms ease;
+  -o-transition:all 600ms ease;
+}
+
+#downs {
+  position: relative;
+  top: 0px;
+  -webkit-transition:all 600ms ease;
+  -moz-transition:all 600ms ease;
+  -o-transition:all 600ms ease;
+}
+
+#downs:hover {
+  position: relative;
+  top: 15px;
+  -webkit-transition:all 600ms ease;
+  -moz-transition:all 600ms ease;
+  -o-transition:all 600ms ease;
+}
+
+
 sup, sub {
   height: 0;
   line-height: 1;

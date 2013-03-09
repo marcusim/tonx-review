@@ -65,8 +65,8 @@ end
 
 desc "Update Posts"
 task :push do
-  `git add _posts/*`
-  `git commit -m "edit posts"`
+  `git add _includes/*`
+  `git commit -m "edit lists"`
   `git push`
 end
 
