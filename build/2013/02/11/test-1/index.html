@@ -1,0 +1,100 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> 	
+<html lang="en"> 
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />	<!-- Force Latest IE rendering engine -->
+    <title>test 1</title>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="/static/images/favicon.png" />
+
+    <META name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <META name="description" content="Tonx Coffee Reviews. Find the latest reviews on Tonx Coffee. Is it worth it? Read the pros and cons of Tonx!"> 
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <!-- GA -->
+    <script type="text/javascript">
+      // Standard GA
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22896349-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+      // Link Tracker
+      function trackLink(link, category, action) { 
+ 
+      try { 
+      _gaq.push(['_trackEvent', category , action, link.innerHTML]); 
+      } catch(err){}
+       
+      setTimeout(function() {
+      document.location.href = link.href;
+      }, 100);
+      }
+
+      // SEO-Rank Tracker
+      if (document.referrer.match(/google\.com/gi) && document.referrer.match(/cd/gi)) {
+        var myString = document.referrer;
+        var r        = myString.match(/cd=(.*?)&/);
+        var rank     = parseInt(r[1]);
+        var kw       = myString.match(/q=(.*?)&/);
+        
+        if (kw[1].length > 0) {
+          var keyWord  = decodeURI(kw[1]);
+        } else {
+          keyWord = "(not provided)";
+        }
+
+        var p        = document.location.pathname;
+        _gaq.push(['_trackEvent', 'RankTracker', keyWord, p, rank, true]);
+      }
+    </script>
+
+    <!--[if IE 7]>
+      <script src="/static/css/font-awesome-ie7.css"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">	
+
+      <!-- Main Body Content -->
+      <div style="padding-top:60px;">
+      <article class='ten columns offset-by-four' id="article-content">
+  <header class="ten columns" id="article-header">
+    <h1>test 1</h1>
+  </header>
+
+  <div class='ten columns gray' id="date-header">
+    <p>
+      Feb 11, 2013
+  
+    </p>
+
+  </div>
+
+  <div class="ten columns" id="article-content">
+    <h3 id="what-is-going-on">What is going on?</h3>
+
+  </div>
+
+</article>
+
+      </div>
+    </div>
+  </body>
+</html> 
